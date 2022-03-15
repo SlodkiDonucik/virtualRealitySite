@@ -1,0 +1,76 @@
+.pageMain{
+    display: flex;
+    min-height: 591px;
+}
+.bannerLeft{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bannerRight{
+    background-image: url(../img/banner.jpg);    
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+.bannerInfo{
+    width: 540px;
+}
+.bannerInfo>h1{
+    font-weight: 400;
+    color: #654aff;
+    margin-bottom: 20px;
+    font-size: 60px;
+    position: relative;
+    padding-top: 20px;
+}
+.bannerInfo>h1::before{
+    content: '';
+    position: absolute;
+    height: 6px;
+    background-color: #654aff;
+    width: 110px;
+    top: 0;
+}
+.bannerInfo>p{
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 18px;
+}
+.bannerInfo> .link{
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.link > a{
+    color: #111;
+}
+.bannerInfo>button{
+    background-color: #654aff;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    padding: 30px 60px;
+    line-height: 5px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #654aff;
+}
+.bannerInfo>button:hover{
+    background-color: transparent;
+    color: #111;
+    border: 2px solid rgb(161, 161, 161);
+}
+span{
+    color: #654aff;
+    border-bottom: 1px solid #654aff;
+    cursor: pointer;
+}
+span:hover{
+    border-bottom: none;
+}

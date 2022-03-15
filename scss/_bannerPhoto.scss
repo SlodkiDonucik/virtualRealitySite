@@ -1,0 +1,40 @@
+.bannerPhoto{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 629px;
+    position: relative;
+}
+.photoText{
+    position: absolute;
+    width: 520px;
+    height: 415px;
+    background-color: #fff;
+    top: 100px;
+    left: 10%;
+    padding: 35px;
+
+    p{
+        padding: 10px 0 5px 0;
+        letter-spacing: 3px;
+    }
+    span{
+        color: #111;
+        border-bottom: 1px solid #111;
+    }
+    span:hover{
+        border-bottom: 1px solid #654aff;
+    }
+    h1{
+        font-size: 55px;
+        font-weight: 400;
+        color: #654aff;
+    }
+    h2{
+        padding-top: 25px;
+        padding-bottom: 10px;
+    }
+    .cardButton{
+        padding: 15px 30px;
+    }
+}

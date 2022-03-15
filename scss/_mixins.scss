@@ -1,0 +1,11 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin text($font, $weight, $color) {
+    font-size: $font;
+    font-weight: $weight;
+    color: $color;
+}
+/*żeby to dołączyć - @include text(20px, 400, #fff);*/

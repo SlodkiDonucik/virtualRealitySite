@@ -1,0 +1,47 @@
+.whiteBrain{
+    background-color: #fff;
+    height: 807px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.whiteBrainText{
+    width: 490px;
+}
+.whiteBrainTextContent{
+    padding: 50px;
+}
+.whiteBrainTextContent>h2{
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.parText{
+    line-height: 25px;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.parBold{
+    font-weight: 700;
+}
+.whiteCircle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0edff;
+    font-size: 40px;
+    color: #654aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.whiteBrainImage{
+    background-image: url(../img/girlplayer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 490px;
+    height: 680px;
+    margin-right: 50px;
+}

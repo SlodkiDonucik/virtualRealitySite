@@ -1,0 +1,35 @@
+.sectionFooter{
+    background-color: #333;
+    height: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+
+    div{
+        width: 400px;
+    }
+    p{
+        text-align: center;
+        line-height: 23px;
+    }
+}
+.pageFooter{
+    background-color: #333;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+
+    a{
+        color: #b9c4e3;
+    }
+    a:hover{
+        color: #808080;
+        text-decoration: none;
+    }
+}

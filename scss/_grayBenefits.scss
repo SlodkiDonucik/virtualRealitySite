@@ -1,0 +1,66 @@
+.grayBenefits{
+    background-color: #e5e5e5;
+    height: 838px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grayBenefitsText{
+    color: #654aff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    h1{
+        font-size: 61px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 15px;
+    }
+    p{
+        color: #111;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+}
+.grayContent{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.grayContentCards{
+    background-color: #fff;
+    width: 965px;
+    min-height: 155px ;
+    font-size: 16px;
+    padding: 40px 50px 40px 90px;
+    line-height: 25px;
+}
+.grayContentCards::before{
+    content: '1';
+    color: #654aff;
+    font-size: 85px;
+    position: absolute;
+    transform: translate(-60px, 10px);
+}
+.contentCard1{
+    background-color: #efefef;
+}
+.contentCard2{
+    background-color: #fff;
+}
+.contentCard2::before{
+    content: '2';
+}
+.contentCard3{
+    background-color: #654aff;
+    color: #fff;
+}
+.contentCard3::before{
+    content: '3';
+    color: #fff;
+}

@@ -1,0 +1,757 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*---------------Page header--------------------*/
+
+.logo{
+    font-size: 35px;
+    color: #654aff;
+}
+.hamburgerMenu{
+    font-size: 34px;
+    color: #111;
+}
+.headerNav{
+    display: none;
+}
+.pageHeader{
+    padding: 18px 0;
+}
+.headerWrapper{ /* dobry sposób na ikonki żeby były oddalone, ale był odstęp od krawędzi*/
+    width:1140px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------------Page banner-------------*/
+
+.pageMain{
+    display: flex;
+    min-height: 591px;
+}
+.bannerLeft{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.bannerRight{
+    background-image: url('./img/banner.jpg');    
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+.bannerInfo{
+    width: 540px;
+}
+/*Tytuł strony VR Headsets*/
+.bannerInfo>h1{
+    font-weight: 400;
+    color: #654aff;
+    margin-bottom: 20px;
+    font-size: 60px;
+    position: relative;
+    padding-top: 20px;
+}
+/*Pozioma kreska nad tytułem*/
+.bannerInfo>h1::before{
+    content: '';
+    position: absolute;
+    height: 6px;
+    background-color: #654aff;
+    width: 110px;
+    top: 0;
+
+}
+.bannerInfo>p{
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 18px;
+}
+.bannerInfo> .link{
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.link > a{
+    color: #111;
+}
+.bannerInfo>button{
+    background-color: #654aff;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    padding: 30px 60px;
+    /*wysokość na której leży tekst (i interlinia)*/
+    line-height: 5px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid #654aff;
+}
+.bannerInfo>button:hover{
+    background-color: transparent;
+    color: #111;
+    border: 2px solid rgb(161, 161, 161);
+}
+span{
+    color: #654aff;
+    border-bottom: 1px solid #654aff;
+    cursor: pointer;
+}
+span:hover{
+    border-bottom: none;
+}
+/*Fioletowy baner z kartami*/
+.bannerCards{
+    min-height: 752px;
+    background-color: #654aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.bannerCardsText{
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.bannerCardsText>h1{
+    font-size: 61px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.bannerCardsText>p{
+    font-size: 20px;
+    padding-top: 10px 0 40px 0;
+}
+.cardsContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 62px;
+}
+.card{
+    background-color: #fff;
+    width: 339px;
+    height: 392px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+
+}
+.cardIcon{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #f0edff;
+    font-size: 45px;
+    color: #654aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+    right: 122px;
+}
+.card > h2{
+    font-size: 20px;
+    color: #654aff;
+    text-transform: uppercase;
+    margin: 95px auto 25px auto;
+    letter-spacing: 1px;
+    padding: 0 20px;
+}
+.card > p{
+    color: #524b77;
+    font-size: 18px;
+    margin: 0 35px;
+    line-height: 30px;
+}
+.cardButton{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border: 2px solid #654aff;
+    color: #111;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.cardButton:hover{
+    border: 2px solid rgb(126, 122, 122);
+}
+
+/* Biały baner z obrazkiem*/
+.whiteVirtual{
+    background-color: #fff;
+    min-height: 807px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.virtualImg{
+    background-image: url(./img/music2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 680px;
+    margin-right: 50px;
+}
+.virtualText{
+    width: 600px;
+    height: 600px;
+    padding: 0 80px 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.textContentTech{
+    color: #654aff;
+    font-size: 20px;
+    letter-spacing: 2px;
+} 
+.textContentMain{
+    font-size: 61px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    padding: 10px 0;
+}
+.virtualCircle{
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #f0edff;
+    color: #654aff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paragraphMid{
+    padding: 10px 0;
+    line-height: 25px;
+}
+.paragaphEnd{
+    padding: 15px 0 40px 0;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+.virtualTextCircle{
+    position: relative;
+    background-color: #f0edff;
+}
+.parCircle{
+    padding: 0 25px 0 80px;
+    line-height: 25px;
+}
+
+/*Szary z benefitami*/
+.grayBenefits{
+    background-color: #e5e5e5;
+    height: 838px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.grayBenefitsText{
+    color: #654aff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.grayBenefitsText>h1{
+    font-size: 61px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+.grayBenefitsText>p{
+    color: #111;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.grayContent{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.grayContentCards{
+    background-color: #fff;
+    width: 965px;
+    min-height: 155px ;
+    font-size: 16px;
+    padding: 40px 50px 40px 90px;
+    line-height: 25px;
+}
+.grayContentCards::before{
+    content: '1';
+    color: #654aff;
+    font-size: 85px;
+    position: absolute;
+    transform: translate(-60px, 10px);
+}
+.contentCard1{
+    background-color: #efefef;
+}
+.contentCard2{
+    background-color: #fff;
+}
+.contentCard2::before{
+    content: '2';
+}
+.contentCard3{
+    background-color: #654aff;
+    color: #fff;
+}
+.contentCard3::before{
+    content: '3';
+    color: #fff;
+}
+
+/*Biały z mózgiem*/
+.whiteBrain{
+    background-color: #fff;
+    height: 807px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.whiteBrainText{
+    width: 490px;
+}
+.whiteBrainTextContent{
+    padding: 50px;
+}
+.whiteBrainTextContent>h2{
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+.parText{
+    line-height: 25px;
+    font-size: 16px;
+    padding: 15px 0;
+}
+.parBold{
+    font-weight: 700;
+}
+.whiteCircle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0edff;
+    font-size: 40px;
+    color: #654aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.whiteBrainImage{
+    background-image: url(./img/girlplayer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 490px;
+    height: 680px;
+    margin-right: 50px;
+}
+
+/*Ten ze zdjęciem w tle*/
+.bannerPhoto{
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 629px;
+    position: relative;
+}
+.photoText{
+    position: absolute;
+    width: 520px;
+    height: 415px;
+    background-color: #fff;
+    top: 100px;
+    left: 10%;
+    padding: 35px;
+}
+.photoText > p{
+    padding: 10px 0 5px 0;
+    letter-spacing: 3px;
+}
+.photoText span{
+    color: #111;
+    border-bottom: 1px solid #111;
+}
+.photoText span:hover{
+    border-bottom: 1px solid #654aff;
+}
+.photoText > h1{
+    font-size: 55px;
+    font-weight: 400;
+    color: #654aff;
+}
+.photoText > h2{
+    padding-top: 25px;
+    padding-bottom: 10px;
+}
+.photoText> .cardButton{
+    padding: 15px 30px;
+}
+
+/*Biały key benefits*/
+.keyBenefits{
+    background-color: #fff;
+    height: 588px;
+    display: flex;
+    justify-content: center;
+}
+.keyBenefits>div{
+    height: 470px;
+    width: 600px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.keyLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+.keyLeft > h2{
+    color: #654aff;
+    font-weight: 700;
+    font-size: 38px;
+}
+.keyLeft > p{
+    padding-top: 25px;
+    line-height: 32px;
+    text-align: justify;
+}
+.keyLeft > a{
+    margin: 30px 0;
+    text-decoration: none;
+    color: #111;
+    font-size: 20px;
+    font-weight: 700;
+}
+.keyLeft > a > i{
+    color: #654aff;
+}
+.keyLeft > a:hover{
+    color: #654aff;
+}
+.keyRight{
+    padding-right: 50px;
+}
+.keyRight>h1{
+    font-size: 60px;
+    color: #654aff;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.keyRight>h3{
+    padding-top: 20px;
+    letter-spacing: 4px;
+}
+
+/*twittery i facebooki*/
+.follow{
+    background-color: #654aff;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.follow>h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.follow a{
+    color: #fff;
+    font-size: 30px;
+    margin: 15px;
+}
+.whiteRectangle{
+    width: 100px;
+    height: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+/*Stopki*/
+.sectionFooter{
+    background-color: #333;
+    height: 143px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+}
+.sectionFooter div{
+    width: 400px;
+}
+.sectionFooter p{
+    text-align: center;
+    line-height: 23px;
+}
+.pageFooter{
+    background-color: #333;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+}
+.pageFooter a{
+    
+    color: #b9c4e3;
+}
+.pageFooter a:hover{
+    color: #808080;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .pageMain{
+        min-height: 525px;
+    }
+    .bannerInfo{
+        width: 440px;
+    }
+    .headerWrapper{
+        width: 900px;
+    }
+    .bannerInfo>h1{
+        font-size: 48px;
+    }
+    .card{
+        width: 250px;
+        height: 500px;
+    }
+    .cardIcon{
+        right: 78px;
+    }
+    .whiteBrain{
+        flex-direction: column;
+        height: auto;
+    }
+    .whiteBrainText{
+        width: 70%;
+    }
+    .whiteBrainImage{
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 992px){
+    .pageMain{
+        min-height: 460px;
+    }
+    .bannerInfo{
+        width: 315px;
+        margin-right: 25px;
+    }
+    .headerWrapper{
+        width: 750px;
+    }
+    .bannerCards{
+        padding: 50px;
+    }
+    .card{
+        width: 315px;
+        height: 400px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .cardIcon{
+        right: 122px;
+    }
+    .whiteVirtual{
+        flex-wrap: wrap;
+    }
+    .virtualText{
+        padding: 0;
+    }
+    .grayBenefits{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .grayBenefitsText > p{
+        padding-bottom: 15px;
+    }
+    
+    .grayContentCards{
+        width: 100%;
+    }
+    .keyBenefits{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .keyRight{
+        padding: 0;
+    }
+    .keyRight>h1{
+        font-size: 50px;
+    }
+    .keyLeft{
+        padding: 0;
+    }
+    .photoText h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px){
+    .pageMain{
+        flex-direction: column;
+        min-height: 960px;
+    }
+    .headerWrapper{
+        width: 75%;
+    }
+    .bannerLeft{
+        justify-content: center;
+    }
+    .whiteVirtual{
+        min-height:  100%;
+        margin-bottom: 50px;
+    }
+    .virtualTextInfo{
+        padding: 10px 0;
+    }
+    .virtualImg{
+        margin: 0;
+    }
+    .virtualText{
+        padding: 0;
+    }
+    .textContentMain{
+        font-size: 40px;
+    }
+    .grayBenefits{
+        display: table;
+    }
+    .grayBenefitsText > h1{
+        font-size: 40px;
+    }
+    .whiteBrainImage{
+        width: 400px;
+        height: 550px;
+    }
+    .photoText{
+        width: 410px;
+        height: 350px;
+    }
+    .photoText h1{
+        font-size: 40px;
+    }
+    .keyBenefits>div{
+        height: auto;
+        width: 500px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+@media (max-width: 564px){
+    .virtualImg{
+        height: 580;
+    }
+    .virtualCircle{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .whiteVirtual{
+        height: 1500px;
+    }
+    .virtualText{
+        height: 750px;
+    }
+    .bannerCardsText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerCardsText>h1{
+        font-size: 35px;
+    }
+    .bannerCardsText>p{
+        font-size: 18px;
+    }
+
+    .grayContentCards{
+        padding: 25px 30px 25px 70px;
+    }
+    .grayContentCards::before{
+        font-size: 60px;
+    }
+    .whiteBrainText{
+        width: 85%;
+    }
+    .whiteBrainImage{
+        width: 350px;
+        height: 490px;
+    }
+    .photoText{
+        width: 310px;
+        height: 400px;
+        top: 190px;
+        left: 5%;
+    }
+    .keyBenefits>div{
+        height: auto;
+        width: 350px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .photoText h1{
+        font-size: 30px;
+    }
+    .keyRight> h1{
+        font-size: 30px;
+    }
+    .keyLeft, .keyRight{
+        padding: 20px;
+    }
+    .keyLeft> a {
+        margin: 30px 0 0 0;
+    }
+    .follow> h1{
+        font-size: 40px;
+    }
+}

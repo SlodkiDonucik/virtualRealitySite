@@ -1,0 +1,85 @@
+.bannerCards{
+    min-height: 752px;
+    background-color: #654aff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bannerCardsText{
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    h1{
+        font-size: 61px;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+    p{
+        font-size: 20px;
+        padding-top: 10px 0 40px 0;
+    }
+}
+
+.cardsContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 62px;
+}
+.card{
+    background-color: #fff;
+    width: 339px;
+    height: 392px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+
+    h2{
+        font-size: 20px;
+        color: #654aff;
+        text-transform: uppercase;
+        margin: 95px auto 25px auto;
+        letter-spacing: 1px;
+        padding: 0 20px;
+    }
+    p{
+        color: #524b77;
+        font-size: 18px;
+        margin: 0 35px;
+        line-height: 30px;
+    }
+}
+.cardIcon{
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #f0edff;
+    font-size: 45px;
+    color: #654aff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+    right: 122px;
+}
+
+.cardButton{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    border: 2px solid #654aff;
+    color: #111;
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 10px 30px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.cardButton:hover{
+    border: 2px solid rgb(126, 122, 122);
+}

@@ -1,0 +1,211 @@
+@media (max-width: 1200px) {
+    .pageMain{
+        min-height: 525px;
+    }
+    .bannerInfo{
+        width: 440px;
+    }
+    .headerWrapper{
+        width: 900px;
+    }
+    .bannerInfo>h1{
+        font-size: 48px;
+    }
+    .card{
+        width: 250px;
+        height: 500px;
+    }
+    .cardIcon{
+        right: 78px;
+    }
+    .whiteBrain{
+        flex-direction: column;
+        height: auto;
+    }
+    .whiteBrainText{
+        width: 70%;
+    }
+    .whiteBrainImage{
+        margin-bottom: 50px;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 992px){
+    .pageMain{
+        min-height: 460px;
+    }
+    .bannerInfo{
+        width: 315px;
+        margin-right: 25px;
+    }
+    .headerWrapper{
+        width: 750px;
+    }
+    .bannerCards{
+        padding: 50px;
+    }
+    .card{
+        width: 315px;
+        height: 400px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .cardIcon{
+        right: 122px;
+    }
+    .whiteVirtual{
+        flex-wrap: wrap;
+    }
+    .virtualText{
+        padding: 0;
+    }
+    .grayBenefits{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .grayBenefitsText > p{
+        padding-bottom: 15px;
+    }
+    
+    .grayContentCards{
+        width: 100%;
+    }
+    .keyBenefits{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .keyRight{
+        padding: 0;
+    }
+    .keyRight>h1{
+        font-size: 50px;
+    }
+    .keyLeft{
+        padding: 0;
+    }
+    .photoText h1{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px){
+    .pageMain{
+        flex-direction: column;
+        min-height: 960px;
+    }
+    .headerWrapper{
+        width: 75%;
+    }
+    .bannerLeft{
+        justify-content: center;
+    }
+    .whiteVirtual{
+        min-height:  100%;
+        margin-bottom: 50px;
+    }
+    .virtualTextInfo{
+        padding: 10px 0;
+    }
+    .virtualImg{
+        margin: 0;
+    }
+    .virtualText{
+        padding: 0;
+    }
+    .textContentMain{
+        font-size: 40px;
+    }
+    .grayBenefits{
+        display: table;
+    }
+    .grayBenefitsText > h1{
+        font-size: 40px;
+    }
+    .whiteBrainImage{
+        width: 400px;
+        height: 550px;
+    }
+    .photoText{
+        width: 410px;
+        height: 350px;
+    }
+    .photoText h1{
+        font-size: 40px;
+    }
+    .keyBenefits>div{
+        height: auto;
+        width: 500px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+@media (max-width: 564px){
+    .virtualImg{
+        height: 580;
+    }
+    .virtualCircle{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .whiteVirtual{
+        height: 1500px;
+    }
+    .virtualText{
+        height: 750px;
+    }
+    .bannerCardsText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .bannerCardsText>h1{
+        font-size: 35px;
+    }
+    .bannerCardsText>p{
+        font-size: 18px;
+    }
+
+    .grayContentCards{
+        padding: 25px 30px 25px 70px;
+    }
+    .grayContentCards::before{
+        font-size: 60px;
+    }
+    .whiteBrainText{
+        width: 85%;
+    }
+    .whiteBrainImage{
+        width: 350px;
+        height: 490px;
+    }
+    .photoText{
+        width: 310px;
+        height: 400px;
+        top: 190px;
+        left: 5%;
+    }
+    .keyBenefits>div{
+        height: auto;
+        width: 350px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .photoText h1{
+        font-size: 30px;
+    }
+    .keyRight> h1{
+        font-size: 30px;
+    }
+    .keyLeft, .keyRight{
+        padding: 20px;
+    }
+    .keyLeft> a {
+        margin: 30px 0 0 0;
+    }
+    .follow> h1{
+        font-size: 40px;
+    }
+}
